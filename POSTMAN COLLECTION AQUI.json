@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "a3d09a05-09d5-4681-aed7-fd72f64a6fb6",
+		"name": "Teste-F1rst",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36524987"
+	},
+	"item": [
+		{
+			"name": "POST NOVO FUNCIONARIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeFuncionario\" : \"Junior André\",\r\n    \"designacaoFuncionario\" : \"Dev Senior\",\r\n    \"salario\" : \"3000.00\",\r\n    \"numeroTelefone\" : \"73981071515\",\r\n    \"enderecoFuncionario\" : \"Rua Jordania, Nº 259\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/funcionario/api/v1/gestao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionario",
+						"api",
+						"v1",
+						"gestao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BUSCA FUNCIONARIO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/funcionario/api/v1/gestao/idAqui!!",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionario",
+						"api",
+						"v1",
+						"gestao",
+						"idAqui!!"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BUSCA TODOS FUNCIONARIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/funcionario/api/v1/gestao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionario",
+						"api",
+						"v1",
+						"gestao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE FUNCIONARIO ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/funcionario/api/v1/gestao/idAqui!!!",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionario",
+						"api",
+						"v1",
+						"gestao",
+						"idAqui!!!"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH ATUALIZA FUNCIONARIO",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeFuncionario\" : \"João Victor\",\r\n    \"designacaoFuncionario\" : \"Dev Pleno\",\r\n    \"salario\" : \"12000.00\",\r\n    \"numeroTelefone\" : \"73981071515\",\r\n    \"enderecoFuncionario\" : \"Rua Jordania, Nº 198\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/funcionario/api/v1/gestao/idAqui!!!",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionario",
+						"api",
+						"v1",
+						"gestao",
+						"idAqui!!!"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
